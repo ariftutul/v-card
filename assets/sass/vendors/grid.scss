@@ -1,0 +1,29 @@
+@import"../abstracts/variables.scss";
+@import"../abstracts/mixins.scss";
+
+$grid_size: 100 / $total_grid;
+.row{
+@include flex();
+@include flex_wrap();
+}
+@mixin make_col($break_point_name :false){
+    @for $col_no from 1 through $total_grid  {
+        @if $break_point_name{
+                 .col-#{$break_point_name}-#{$col_no}{
+                    -webkit-flex-basis:$grid_size * $col_no *1%;
+                    flex-basis:$grid_size * $col_no *1%;
+                    width:$grid_size * $col_no *1%;
+                  }
+        }
+        @else{
+            .col-#{$col_no}{
+                -webkit-flex-basis:$grid_size * $col_no *1%;
+                flex-basis:$grid_size * $col_no *1%;
+                width:$grid_size * $col_no *1%;
+             }
+
+        }
+      }
+}
+@include make_col();
+

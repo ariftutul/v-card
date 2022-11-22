@@ -1,0 +1,50 @@
+@import"../abstracts/variables.scss";
+@mixin make_flex_order($break_point_name:false){
+    @if $break_point_name{
+         @for $i from 1 to $total_grid{
+             .order-#{$break_point_name}-#{ $i}{
+                      -webkit-box-ordinal-group: $i;
+                      -moz-box-ordinal-group: $i;
+                     -ms-flex-order:$i ;
+                      -webkit-order:$i ;
+                        order: $i;
+                }
+         }
+    }
+        @else{
+             @for $i from 1 to $total_grid{
+                .order-#{$i} {
+                    -webkit-box-ordinal-group: $i;
+                    -moz-box-ordinal-group: $i;
+                    -ms-flex-order:$i ;
+                    -webkit-order:$i ;
+                    order: $i;
+                }
+             }
+         }
+}
+
+     @include make_flex_order();
+      @each $break_point_name, $break_point in $break_points{
+         @media (min-width:$break_point) {  
+           @include make_flex_order($break_point_name) 
+         }
+       }
+      @each $break_point_name, $break_point in $break_points{
+         @media (min-width:$break_point) {  
+          @if $break_point == 0px{
+            $break_point:80%;
+
+          }
+          .container{
+            width: 100%;
+            max-width: $break_point;
+            box-sizing: border-box;
+            position: relative;
+            padding: 0px 15px;
+             border: 1px solid black;
+            margin: auto;
+          }
+          
+         }
+       }

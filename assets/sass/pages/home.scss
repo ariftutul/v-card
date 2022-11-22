@@ -1,0 +1,95 @@
+@import"../abstracts/variables.scss";
+@import"../abstracts/mixins.scss";
+
+main {
+    .section_wrapper {
+        .left {
+            text-align: center;
+
+            .profile_img {
+                div {
+                    display: inline-block;
+                    border-radius: 50%;
+
+
+                }
+
+                .circle_1 {
+                    border: 4px solid $green_light;
+
+                    .circle_2 {
+                        border: 20px solid $white;
+
+                        .circle_3 {
+                            border: 15px solid $green_deep;
+
+                            .circle_4 {
+                                border: 20px solid $green_light;
+                            
+
+                                img {
+
+                                    border-radius: 50%;
+                                    // background-size: 100px;
+                                    // background-position: center;
+                                    width: 70px;
+                                    height: 70px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .profil_info {
+                h1 {
+
+                    text-transform: capitalize;
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: $green_deep ;
+                    font-family: $Poppin;
+                }
+                h2 {
+
+                    text-transform: capitalize;
+                    font-family: $Poppin;
+                    color: $black;
+                }
+            }
+        }
+        .right {
+            .profil_info {
+                h2 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: black;
+                    text-transform: capitalize;
+                    margin-bottom: 30px;
+                }
+
+                table {
+
+                    tr {
+                        td {
+                            i {
+                              
+
+                            }
+
+                            &:nth-child(1) {}
+
+                            &:nth-child(2) {}
+
+                            &:nth-child(3) {}
+
+                            &:nth-child(4) {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

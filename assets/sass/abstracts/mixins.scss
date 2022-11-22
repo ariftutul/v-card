@@ -1,0 +1,21 @@
+@mixin google_font($name){
+@import url("https://fonts.googleapis.com/css2?#{$name}");
+}
+@mixin flex {
+display: -webkit-box ;
+display: -moz-box;
+display: -ms-flexbox; 
+display: -webkit-flex;
+display: flex;
+}
+@mixin flex_wrap {
+-ms-flex-wrap:  wrap ;
+-webkit-flex-wrap: wrap ;
+flex-wrap: wrap;
+}
+@mixin flex_justify($value) {
+    -webkit-justify-content:$value;
+    justify-content:$value;
+    
+    
+}

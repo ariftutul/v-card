@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "sass:start" :"sass assets/sass/style.scss styles/style.css -w"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}

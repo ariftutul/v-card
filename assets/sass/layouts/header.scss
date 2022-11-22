@@ -1,0 +1,49 @@
+@use"../components/button.scss";
+@import"../abstracts/variables.scss";
+@import"../abstracts/mixins.scss";
+header{
+    nav{
+        @include flex();
+        @include flex_wrap();
+        @include flex_justify(space-between);
+        .left{
+            .logo{
+                height: 80px;
+                img{
+                    height: 100%;
+
+                }
+            }
+        }
+        .right{
+            @include flex();
+            @include flex_justify(flex-end);
+            ul{
+                @include flex();
+                @include flex_wrap();
+                @include flex_justify(flex-end);
+                li{
+                    margin: 15px;
+                    a{
+                        display: block;
+                        font-family:$Poppin ;
+                        font-size: 17px;
+                        padding:10px 20px;
+                        font-weight: bold;
+                        color: black;
+                        border: 1px solid white;
+                        border-radius: 50px;
+                        text-transform: uppercase;
+                        &:hover{
+                            border: 1px solid $green_light;
+                        }
+                 
+                        }
+                   
+                       }
+                    }
+               
+                }
+            }
+        }
+    

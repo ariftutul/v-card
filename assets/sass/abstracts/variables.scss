@@ -1,0 +1,25 @@
+$Poppin:'Poppins', sans-serif;
+// color
+$green_deep:#00a652;
+$green_light:#4cb050;
+$green_transparent:#ddf0dd;
+$black:#404040;
+$yello_light:#ffeacd;
+$yello_deep:#fbb053;
+$red_deep:#fe5722;
+$red_light:#ffddd3;
+$white:#ffffff;
+$color_names:yellow,green,red;
+$color_deep_value:(
+    green_deep:#00a652,
+    green_light:#4cb050,
+    yello_light:#ffeacd,
+    yello_deep:#fbb053,
+    red_deep:#fe5722,
+
+);
+// responsive 
+$total_grid:12;
+$break_points:("xs":0px,"sm":576px,"md":768px,"lg":992px,"xl":1200px,"xxl": 1400px);
+$break_point_names:xs,sm,md,lg,xl,xxl;
+

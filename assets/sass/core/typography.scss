@@ -1,0 +1,10 @@
+@import"../abstracts/mixins.scss";
+// @font-face{
+//     font-family: 'Poppins', sans-serif;
+//     src: url(../fonts/Poppins/Poppins-Regular.ttf);
+// }
+$font-families: lato, poppin;
+@each $family in $font_families{
+@include google_font("family= #{$family}");
+}
+// @include google_font("family=poppin&family=lato");
